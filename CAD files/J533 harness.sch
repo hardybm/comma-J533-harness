@@ -1848,6 +1848,8 @@ Source: GLX-S-88M.pdf</description>
 <text x="134.62" y="132.08" size="1.778" layer="92">CAN2_L</text>
 <text x="142.24" y="71.12" size="1.778" layer="95">CAN_EXTENDED_LOW</text>
 <text x="142.24" y="45.72" size="1.778" layer="95">CAN_EXTENDED_HIGH</text>
+<text x="167.64" y="129.54" size="1.778" layer="91">CAN2 loopback 
+enable</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="5.08" y="5.08" smashed="yes">
@@ -2093,6 +2095,17 @@ Source: GLX-S-88M.pdf</description>
 <wire x1="86.36" y1="53.34" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
 <label x="142.24" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="MOLEX_IGRID_TO_COMMA_RELAY1" gate="A" pin="25"/>
+<wire x1="160.02" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="129.54" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="MOLEX_IGRID_TO_COMMA_RELAY1" gate="A" pin="23"/>
+<wire x1="162.56" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
+<junction x="162.56" y="129.54"/>
 </segment>
 </net>
 </nets>
